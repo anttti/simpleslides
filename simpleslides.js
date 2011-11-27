@@ -54,7 +54,6 @@
 		if (currentSlide + direction >= 0 && 
 				currentSlide + direction < slideCount) {
 			currentSlide += direction;
-			console.log("page: " + currentSlide);
 			$('body').animate({scrollLeft: currentSlide * screenWidth}, 400);
 		}	
 	}
