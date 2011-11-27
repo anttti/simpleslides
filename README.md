@@ -8,7 +8,6 @@ A simple "web app" for replacing Powerpoint & Keynote. Mostly for my own persona
 2. Chrome / Chromium. Might work in other browsers as well, or then not. Haven't really tried.
 
 ## Usage
-Want to try it out? Here's how:
 1. \<div class="slide" /\> represents a single slide. Style as you wish.
 2. All .slide:s need to be wrapped in \<div id="presentation" /\>.
 3. Include jQuery and simpleslides.js.
