@@ -29,7 +29,7 @@
 			$window = $(window),
 			totalPresentationWidth,
 			$slideContainers;
-		
+
 		$slides.wrap('<div class="slide-container" style="float: left" />');
 		$slideContainers = $('.slide-container');
 
