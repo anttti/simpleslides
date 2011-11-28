@@ -79,8 +79,8 @@
 	function changePage(direction) {
 		if (currentSlide + direction >= 0 && 
 				currentSlide + direction < slideCount) {
-			currentSlide += direction;
-	
+			currentSlide += direction;	
+			
 			animateScroll(currentSlide * screenWidth);
 		}	
 	}
@@ -90,8 +90,8 @@
 		var fps = 50;
 		var frames = (d / 1000) * fps; // How many frames?
 		var perFrame = 1000/fps; // How much time per frame?
-		var step = (position - document.body.scrollLeft) / frames;
-		
+		var step = Math.floor((position - document.body.scrollLeft) / frames);
+	
 		var intervalID = window.setInterval(function() {
 			scrollBody(step);
 		}, perFrame);
@@ -103,7 +103,7 @@
 	}
 	
 	function scrollBody(step) {
-		document.body.scrollLeft = document.body.scrollLeft + step;
+		document.body.scrollLeft = document.body.scrollLeft + step;				
 	}
 	
 	function correctScroll() {
